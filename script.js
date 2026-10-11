@@ -1,7 +1,7 @@
 class ReusableNav extends HTMLElement {
   connectedCallback() {
     // Use Fetch (AJAX) to load the external component file
-    fetch('./template.html')
+    fetch('/template.html')
       .then(response => response.text())
       .then(html => {
         // Attach a shadow DOM for style encapsulation
