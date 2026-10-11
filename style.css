@@ -17,6 +17,7 @@ div :is(h1,h2,h3,h4,h5,h6) {
 }
 
 .left {
+	padding-left: 8px;
 	padding-right: 1rem;
 	align-items:left;
 	/*background: linear-gradient(to left, #faf1da, transparent);*/
@@ -24,7 +25,9 @@ div :is(h1,h2,h3,h4,h5,h6) {
 }
 
 .right {
+	padding-right:8px;
 	float: right;
+	width: 100%
 }
 
 li, table:is(.pad) {
@@ -41,11 +44,41 @@ body > :first-child, :is(h1,h2,h3) {
 	border-bottom: 2px solid grey;
 }
 
+body :is(h1, p){
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+li {
+	padding: 8px;
+}
+
+body , re-nav {
+	margin: 0;
+}
+
+nav {
+	background-color: antiquewhite;
+}
 
 :is(nav, td) ul{
 	display: inline-block;
 }
 
-tr:nth-child(odd) {
+
+
+tr:nth-child(odd):not(:is(.pad)) {
 	background-color: #f2f2f2;
+	min-width: 100%;
+}
+
+
+th{
+	width: 175px;
+}
+
+table {
+	max-width: 100%;
+	min-width: 175px;
+	width:100%;
 }
