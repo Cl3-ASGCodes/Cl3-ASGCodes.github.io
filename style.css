@@ -1,0 +1,51 @@
+:is(h1,h2,h3,h4,h5,h6) :is(span,a, div) {
+	font-weight: normal;
+}
+
+div :is(h1,h2,h3,h4,h5,h6) {
+	margin-bottom: 15px;
+}
+
+.text-align-right {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-parent {
+	display: flex;
+	gap: 20px;
+}
+
+.left {
+	padding-right: 1rem;
+	align-items:left;
+	/*background: linear-gradient(to left, #faf1da, transparent);*/
+	height: 100%;
+}
+
+.right {
+	float: right;
+}
+
+li, table:is(.pad) {
+	margin-left: 2rem;
+}
+
+
+table:is(.pad) tr th {
+	text-align:left;
+	padding-right: 1rem;
+}
+
+body > :first-child, :is(h1,h2,h3) {
+	border-bottom: 2px solid grey;
+}
+
+
+:is(nav, td) ul{
+	display: inline-block;
+}
+
+tr:nth-child(odd) {
+	background-color: #f2f2f2;
+}

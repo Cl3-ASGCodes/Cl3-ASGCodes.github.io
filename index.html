@@ -1,57 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-<style>
-:is(h1,h2,h3,h4,h5,h6) :is(span,a, div) {
-	font-weight: normal;
-}
-
-div :is(h1,h2,h3,h4,h5,h6) {
-	margin-bottom: 15px;
-}
-
-.text-align-right {
-	display: flex;
-	justify-content: space-between;
-}
-
-.flex-parent {
-	display: flex;
-	gap: 20px;
-}
-
-.left {
-	padding-right: 1rem;
-	align-items:left;
-	/*background: linear-gradient(to left, #faf1da, transparent);*/
-	height: 100%;
-}
-
-.right {
-	float: right;
-}
-
-li,table {
-	margin-left: 2rem;
-}
-
-
-th {
-	text-align:left;
-	padding-right: 1rem;
-}
-
-body > :first-child, :is(h1,h2,h3) {
-	border-bottom: 2px solid grey;
-}
-</style>
+<head>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<title>Academic Repository of Clarence Chu Yong Quan</title>
+</head>
 
 <body>
-	<nav>
-	    <ul><a href="./index.html">Landing</a></ul>
-	    <ul><a href="./info.html">My Info</a></ul>
-	    <ul><a>projects</a></ul>
-	</nav>
+	<re-nav></re-nav>
+
+	<h1>Academic Repository of Clarence Chu Yong Quan</h1>
+	<p>This is a repository collection with all information of the coding project where I've involved in the development process over my learing period in TARUMT's Diploma in Information Technology(2025-until now).</p>
 </body>
 
 </html>
