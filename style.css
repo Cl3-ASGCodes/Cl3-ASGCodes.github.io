@@ -44,7 +44,7 @@ body > :first-child, :is(h1,h2,h3) {
 	border-bottom: 2px solid grey;
 }
 
-body :is(h1, p){
+body :is(h1, h2, p){
 	margin-left: 8px;
 	margin-right: 8px;
 }
@@ -58,7 +58,7 @@ body , re-nav {
 }
 
 nav {
-	background-color: antiquewhite;
+	background-color: lightgrey;
 }
 
 :is(nav, td) ul{
@@ -81,4 +81,5 @@ table {
 	max-width: 100%;
 	min-width: 175px;
 	width:100%;
+	padding:1rem;
 }
