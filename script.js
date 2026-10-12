@@ -4,13 +4,7 @@ class ReusableNav extends HTMLElement {
     // Get the path, remove leading/trailing slashes, and split by '/'
     const path = window.location.pathname.replace(/^\/|\/\$/g, '');
     const directoryTier = path ? path.split('/').length : 0;
-    var dir;
-
-    if (directoryTier == 0) {
-      dir = '/template.html';
-    }else if (directoryTier == 1) {
-      dir = '../template.html';
-    }
+    const dir = '/template.html';
 
     fetch(dir)
       .then(response => response.text())
